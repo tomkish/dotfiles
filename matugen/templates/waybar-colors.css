@@ -1,0 +1,4 @@
+@define-color bg {{colors.background.default.hex}};
+@define-color accent {{colors.primary.default.hex}};
+@define-color outline {{colors.outline.default.hex}};
+@define-color light {{colors.surface_bright.default.hex}};

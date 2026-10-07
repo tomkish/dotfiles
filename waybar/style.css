@@ -1,0 +1,105 @@
+@import "colors.css";
+
+* {
+    font-family: "VictorMono Nerd Font Propo", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+#tray,
+#network,
+#custom-playerinfo,
+#custom-cava,
+#custom-notification,
+#workspaces,
+#pulseaudio,
+#battery,
+#clock {
+    background-color: @bg;
+    color: @accent;
+    border: 0px solid @outline;
+    border-radius: 6px;
+    padding: 0 12px;
+    margin: 6px 0px;
+}
+
+#workspaces {
+    padding: 0 4px;
+    margin-left: 0
+
+}
+
+
+
+#workspaces button {
+    color: @light;
+    background-color: transparent;
+    padding: 0px 15px;
+    margin: 3px 1px;
+    border-radius: 6px;
+    min-width: 16px;
+}
+
+#workspaces button.active {
+    background-color: @accent; /*active button color*/
+    color: @light;
+    border-radius: 3px;
+    min-width: 15px
+}
+
+#workspaces button.inactive {
+    background-color: @fg;
+    color: @accent;
+}
+
+#workspaces button:hover {
+    background-color: @bg;
+    border-radius: 3px;
+    border: 1px solid @accent;
+}
+
+#workspaces button:not(.active):hover {
+    background-color: @bg;
+    background: @bg;
+    border-radius: 3px;
+    border: 1px solid @accent;
+}
+
+#custom-notification {
+    margin-left: 12;
+}
+
+#custom-notification:hover {
+    background-color: @bg;
+    background: @bg;
+    border-radius: 6px;
+    border: 1px solid @accent;
+}
+
+#clock {
+    margin-right: 12;
+}
+
+#custom-playerinfo:hover {
+    background-color: @bg;
+    border-radius: 6px;
+    border: 1px solid @accent;
+}
+
+#network:hover {
+    background-color: @bg;
+    background: @bg;
+    border-radius: 6px;
+    border: 1px solid @accent;
+}
+
+#pulseaudio:hover {
+    background-color: @bg;
+    background: @bg;
+    border-radius: 6px;
+    border: 1px solid @accent;
+}

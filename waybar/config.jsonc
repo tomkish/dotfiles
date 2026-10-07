@@ -1,0 +1,79 @@
+{
+  "output": ["eDP-1", "HDMI-A-1"],
+    "layer": "top",
+    "position": "top",
+    "height": 35,
+    "spacing": 12,
+
+    "modules-left": ["custom/notification", "hyprland/workspaces", "custom/cava"],
+    "modules-center": ["custom/playerinfo", "tray"],
+    "modules-right": ["pulseaudio", "battery", "network", "clock"],
+
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "all-outputs": true,
+        "sort-by-id": true,
+    },
+
+      "network": {
+       	"format": "{ifname}",
+       	"format-wifi": "{essid} {icon}",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+       	"format-ethernet": "{ifname} 󰈀",
+       	"format-disconnected": "󰤭",
+        "on-click": "kitty nmtui",
+       	"max-length": 50
+            },
+
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "\ueee8 Muted",
+        "format-icons": {
+            "default": ["\uf026", "\uf027", "\uf028"]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "battery": {
+        "states": { "warning": 30, "critical": 15 },
+        "format": "{icon}  {capacity}%",
+        "format-charging": "{capacity}% \uf0e7",
+        "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"]
+    },
+
+    "clock": {
+        "format": "{:%a %I:%M - %d/%m/%y}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "custom/notification": {
+        "format": "\udb82\udce8",
+        "tooltip-format": "Notifications",
+        "on-click": "swaync-client --toggle-panel --skip-wait"
+    },
+
+    "custom/cava": {
+      "format": "{}",
+      "exec": "~/.config/waybar/waybar-cava/cava.sh"
+    },
+
+    "custom/playerinfo": {
+        "format": "{}",
+        "exec": "~/.config/waybar/waybar-cava/playerinfo-scroll.sh",
+        "on-click": "playerctl play-pause",
+        "on-scroll-down": "playerctl previous",
+        "on-scroll-up": "playerctl next"
+    },
+
+
+        "tray": {
+          "icons": {
+            "spotify": ""
+          },
+       	"icon-size": 21,
+       	"spacing": 10
+        }
+
+        }

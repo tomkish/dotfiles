@@ -1,0 +1,80 @@
+* {
+    font-family: "VictorMono Nerd Font Propo", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#network
+#custom-playerinfo,
+#custom-cava,
+#custom-notification,
+#workspaces,
+#pulseaudio,
+#battery,
+#clock {
+    background-color: #0A131B;
+    color: #B6C6CD;
+    border: 0px solid rgba(23, 51, 73, 0.667);
+    border-radius: 6px;
+    padding: 0 12px;
+    margin: 6px 0px;
+}
+
+#workspaces {
+    padding: 0 4px;
+    margin-left: 0
+}
+
+#workspaces button {
+    background-color: transparent;
+    padding: 0px 15px;
+    margin: 3px 1px;
+    border-radius: 6px;
+    min-width: 16px;
+}
+
+#workspaces button.active {
+    border-radius: 3px;
+    min-width:
+}
+
+#workspaces button.inactive {
+    background-color: #ffffff;
+    color: #B6C6CD;
+}
+
+#workspaces button:hover {
+    background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid ;
+}
+
+#workspaces button.active:hover {
+    background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid
+}
+
+#custom-notification {
+    margin-left: 12;
+}
+
+#custom-notification:hover {
+    background-color: transparent;
+    border-radius: 0px;
+    border: 1px solid
+}
+
+#clock {
+    margin-right: 12;
+}
+
+#custom-playerinfo:hover {
+    background-color: #0A131B;
+    border-radius: 0px;
+    border: 1px solid #B6C6CD;
+}
