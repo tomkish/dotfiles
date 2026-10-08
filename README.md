@@ -2,4 +2,4 @@
 
 
 
-Still WIP, thriving to create the coolest rice in the hyprverse
+Still WIP
